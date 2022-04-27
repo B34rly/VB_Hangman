@@ -80,7 +80,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonA.Location = New System.Drawing.Point(252, 219)
         Me.buttonA.Name = "buttonA"
-        Me.buttonA.Size = New System.Drawing.Size(25, 25)
+        Me.buttonA.Size = New System.Drawing.Size(50, 50)
         Me.buttonA.TabIndex = 2
         Me.buttonA.Text = "A"
         Me.buttonA.UseVisualStyleBackColor = True
@@ -89,7 +89,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonB.Location = New System.Drawing.Point(326, 219)
         Me.buttonB.Name = "buttonB"
-        Me.buttonB.Size = New System.Drawing.Size(25, 25)
+        Me.buttonB.Size = New System.Drawing.Size(50, 50)
         Me.buttonB.TabIndex = 3
         Me.buttonB.Text = "B"
         Me.buttonB.UseVisualStyleBackColor = True
@@ -98,7 +98,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonC.Location = New System.Drawing.Point(285, 260)
         Me.buttonC.Name = "buttonC"
-        Me.buttonC.Size = New System.Drawing.Size(25, 25)
+        Me.buttonC.Size = New System.Drawing.Size(50, 50)
         Me.buttonC.TabIndex = 2
         Me.buttonC.Text = "C"
         Me.buttonC.UseVisualStyleBackColor = True
@@ -107,7 +107,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonD.Location = New System.Drawing.Point(338, 260)
         Me.buttonD.Name = "buttonD"
-        Me.buttonD.Size = New System.Drawing.Size(25, 25)
+        Me.buttonD.Size = New System.Drawing.Size(50, 50)
         Me.buttonD.TabIndex = 2
         Me.buttonD.Text = "D"
         Me.buttonD.UseVisualStyleBackColor = True
@@ -116,7 +116,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonE.Location = New System.Drawing.Point(435, 232)
         Me.buttonE.Name = "buttonE"
-        Me.buttonE.Size = New System.Drawing.Size(25, 25)
+        Me.buttonE.Size = New System.Drawing.Size(50, 50)
         Me.buttonE.TabIndex = 2
         Me.buttonE.Text = "E"
         Me.buttonE.UseVisualStyleBackColor = True
@@ -125,7 +125,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonF.Location = New System.Drawing.Point(416, 321)
         Me.buttonF.Name = "buttonF"
-        Me.buttonF.Size = New System.Drawing.Size(25, 25)
+        Me.buttonF.Size = New System.Drawing.Size(50, 50)
         Me.buttonF.TabIndex = 2
         Me.buttonF.Text = "F"
         Me.buttonF.UseVisualStyleBackColor = True
@@ -134,7 +134,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonG.Location = New System.Drawing.Point(571, 287)
         Me.buttonG.Name = "buttonG"
-        Me.buttonG.Size = New System.Drawing.Size(25, 25)
+        Me.buttonG.Size = New System.Drawing.Size(50, 50)
         Me.buttonG.TabIndex = 2
         Me.buttonG.Text = "G"
         Me.buttonG.UseVisualStyleBackColor = True
@@ -143,7 +143,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonH.Location = New System.Drawing.Point(506, 306)
         Me.buttonH.Name = "buttonH"
-        Me.buttonH.Size = New System.Drawing.Size(25, 25)
+        Me.buttonH.Size = New System.Drawing.Size(50, 50)
         Me.buttonH.TabIndex = 2
         Me.buttonH.Text = "H"
         Me.buttonH.UseVisualStyleBackColor = True
@@ -152,7 +152,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonI.Location = New System.Drawing.Point(525, 232)
         Me.buttonI.Name = "buttonI"
-        Me.buttonI.Size = New System.Drawing.Size(25, 25)
+        Me.buttonI.Size = New System.Drawing.Size(50, 50)
         Me.buttonI.TabIndex = 2
         Me.buttonI.Text = "I"
         Me.buttonI.UseVisualStyleBackColor = True
@@ -161,7 +161,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonJ.Location = New System.Drawing.Point(416, 287)
         Me.buttonJ.Name = "buttonJ"
-        Me.buttonJ.Size = New System.Drawing.Size(25, 25)
+        Me.buttonJ.Size = New System.Drawing.Size(50, 50)
         Me.buttonJ.TabIndex = 2
         Me.buttonJ.Text = "J"
         Me.buttonJ.UseVisualStyleBackColor = True
@@ -170,7 +170,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonK.Location = New System.Drawing.Point(285, 347)
         Me.buttonK.Name = "buttonK"
-        Me.buttonK.Size = New System.Drawing.Size(25, 25)
+        Me.buttonK.Size = New System.Drawing.Size(50, 50)
         Me.buttonK.TabIndex = 2
         Me.buttonK.Text = "K"
         Me.buttonK.UseVisualStyleBackColor = True
@@ -179,7 +179,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonL.Location = New System.Drawing.Point(363, 321)
         Me.buttonL.Name = "buttonL"
-        Me.buttonL.Size = New System.Drawing.Size(25, 25)
+        Me.buttonL.Size = New System.Drawing.Size(50, 50)
         Me.buttonL.TabIndex = 2
         Me.buttonL.Text = "L"
         Me.buttonL.UseVisualStyleBackColor = True
@@ -188,7 +188,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonM.Location = New System.Drawing.Point(525, 347)
         Me.buttonM.Name = "buttonM"
-        Me.buttonM.Size = New System.Drawing.Size(25, 25)
+        Me.buttonM.Size = New System.Drawing.Size(50, 50)
         Me.buttonM.TabIndex = 2
         Me.buttonM.Text = "M"
         Me.buttonM.UseVisualStyleBackColor = True
@@ -197,7 +197,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonN.Location = New System.Drawing.Point(686, 260)
         Me.buttonN.Name = "buttonN"
-        Me.buttonN.Size = New System.Drawing.Size(25, 25)
+        Me.buttonN.Size = New System.Drawing.Size(50, 50)
         Me.buttonN.TabIndex = 2
         Me.buttonN.Text = "N"
         Me.buttonN.UseVisualStyleBackColor = True
@@ -206,7 +206,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonO.Location = New System.Drawing.Point(686, 347)
         Me.buttonO.Name = "buttonO"
-        Me.buttonO.Size = New System.Drawing.Size(25, 25)
+        Me.buttonO.Size = New System.Drawing.Size(50, 50)
         Me.buttonO.TabIndex = 2
         Me.buttonO.Text = "O"
         Me.buttonO.UseVisualStyleBackColor = True
@@ -215,7 +215,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonP.Location = New System.Drawing.Point(634, 260)
         Me.buttonP.Name = "buttonP"
-        Me.buttonP.Size = New System.Drawing.Size(25, 25)
+        Me.buttonP.Size = New System.Drawing.Size(50, 50)
         Me.buttonP.TabIndex = 2
         Me.buttonP.Text = "P"
         Me.buttonP.UseVisualStyleBackColor = True
@@ -224,7 +224,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonQ.Location = New System.Drawing.Point(625, 347)
         Me.buttonQ.Name = "buttonQ"
-        Me.buttonQ.Size = New System.Drawing.Size(25, 25)
+        Me.buttonQ.Size = New System.Drawing.Size(50, 50)
         Me.buttonQ.TabIndex = 2
         Me.buttonQ.Text = "Q"
         Me.buttonQ.UseVisualStyleBackColor = True
@@ -233,7 +233,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonR.Location = New System.Drawing.Point(741, 306)
         Me.buttonR.Name = "buttonR"
-        Me.buttonR.Size = New System.Drawing.Size(25, 25)
+        Me.buttonR.Size = New System.Drawing.Size(50, 50)
         Me.buttonR.TabIndex = 2
         Me.buttonR.Text = "R"
         Me.buttonR.UseVisualStyleBackColor = True
@@ -242,7 +242,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonS.Location = New System.Drawing.Point(481, 275)
         Me.buttonS.Name = "buttonS"
-        Me.buttonS.Size = New System.Drawing.Size(25, 25)
+        Me.buttonS.Size = New System.Drawing.Size(50, 50)
         Me.buttonS.TabIndex = 2
         Me.buttonS.Text = "S"
         Me.buttonS.UseVisualStyleBackColor = True
@@ -251,7 +251,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonT.Location = New System.Drawing.Point(400, 396)
         Me.buttonT.Name = "buttonT"
-        Me.buttonT.Size = New System.Drawing.Size(25, 25)
+        Me.buttonT.Size = New System.Drawing.Size(50, 50)
         Me.buttonT.TabIndex = 2
         Me.buttonT.Text = "T"
         Me.buttonT.UseVisualStyleBackColor = True
@@ -260,7 +260,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonU.Location = New System.Drawing.Point(741, 232)
         Me.buttonU.Name = "buttonU"
-        Me.buttonU.Size = New System.Drawing.Size(25, 25)
+        Me.buttonU.Size = New System.Drawing.Size(50, 50)
         Me.buttonU.TabIndex = 2
         Me.buttonU.Text = "U"
         Me.buttonU.UseVisualStyleBackColor = True
@@ -269,7 +269,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonV.Location = New System.Drawing.Point(496, 396)
         Me.buttonV.Name = "buttonV"
-        Me.buttonV.Size = New System.Drawing.Size(25, 25)
+        Me.buttonV.Size = New System.Drawing.Size(50, 50)
         Me.buttonV.TabIndex = 2
         Me.buttonV.Text = "V"
         Me.buttonV.UseVisualStyleBackColor = True
@@ -278,7 +278,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonW.Location = New System.Drawing.Point(646, 306)
         Me.buttonW.Name = "buttonW"
-        Me.buttonW.Size = New System.Drawing.Size(25, 25)
+        Me.buttonW.Size = New System.Drawing.Size(50, 50)
         Me.buttonW.TabIndex = 2
         Me.buttonW.Text = "W"
         Me.buttonW.UseVisualStyleBackColor = True
@@ -287,7 +287,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonX.Location = New System.Drawing.Point(571, 383)
         Me.buttonX.Name = "buttonX"
-        Me.buttonX.Size = New System.Drawing.Size(25, 25)
+        Me.buttonX.Size = New System.Drawing.Size(50, 50)
         Me.buttonX.TabIndex = 2
         Me.buttonX.Text = "X"
         Me.buttonX.UseVisualStyleBackColor = True
@@ -296,7 +296,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonY.Location = New System.Drawing.Point(704, 383)
         Me.buttonY.Name = "buttonY"
-        Me.buttonY.Size = New System.Drawing.Size(25, 25)
+        Me.buttonY.Size = New System.Drawing.Size(50, 50)
         Me.buttonY.TabIndex = 2
         Me.buttonY.Text = "Y"
         Me.buttonY.UseVisualStyleBackColor = True
@@ -305,7 +305,7 @@ Partial Class GameForm_Aiden
         '
         Me.buttonZ.Location = New System.Drawing.Point(220, 347)
         Me.buttonZ.Name = "buttonZ"
-        Me.buttonZ.Size = New System.Drawing.Size(25, 25)
+        Me.buttonZ.Size = New System.Drawing.Size(50, 50)
         Me.buttonZ.TabIndex = 2
         Me.buttonZ.Text = "Z"
         Me.buttonZ.UseVisualStyleBackColor = True
