@@ -17,7 +17,7 @@ Public Class GameForm_Aiden
         Reset()
     End Sub
 
-    Private Sub Randomise_Click(sender As Object, e As EventArgs) Handles Randomise.Click
+    Private Sub Randomise_Click(sender As Object, e As EventArgs)
         Reset()
     End Sub
 
@@ -31,20 +31,35 @@ Public Class GameForm_Aiden
         failedWordsLabel.Text() = "Failed: " + failed.ToString()
         wordsLeftLabel.Text() = "Words Left: " + wordList.Count.ToString()
 
+        livesLost = 0
         hiddenWordLabel.Text() = ""
         selectedLetters = ""
         hiddenWordLabel.Text() = ""
+
         For Each c As Char In hiddenWord
             hiddenWordLabel.Text() += "_ "
         Next
 
+        hangmanPicture.Image = hangmanPictures(livesLost)
+
         For Each currentButton As Button In buttonList
             currentButton.Enabled = True
+            currentButton.BackColor = Color.Gray
         Next
     End Sub
 
     Private Sub gameOver()
+        wordList.Remove(hiddenWord)
+        failed += 1
+        MsgBox("The man has been hanged, you couldn't save him! The correct word was: " + hiddenWord, 1, "Game Lost!")
+        Reset()
+    End Sub
 
+    Private Sub gameWon()
+        wordList.Remove(hiddenWord)
+        completed += 1
+        MsgBox("You saved the man! He is free once more! The word was: " + hiddenWord, 1, "Game Won!")
+        Reset()
     End Sub
 
     Private Sub Game_button_click(sender As Object, e As EventArgs) Handles buttonA.Click, buttonB.Click, buttonC.Click, buttonD.Click, buttonE.Click, buttonF.Click, buttonG.Click, buttonH.Click, buttonI.Click, buttonJ.Click, buttonK.Click, buttonL.Click, buttonM.Click, buttonN.Click, buttonO.Click, buttonP.Click, buttonQ.Click, buttonR.Click, buttonS.Click, buttonT.Click, buttonU.Click, buttonV.Click, buttonW.Click, buttonX.Click, buttonY.Click, buttonZ.Click
@@ -55,18 +70,21 @@ Public Class GameForm_Aiden
         hiddenWordLabel.Text() = ""
         Dim foundLetter = False
         Dim wordFound = True
-        livesLost = 0
-
-        For Each c As Char In selectedLetters.ToUpper()
-            For Each c2 As Char In hiddenWord.ToString().ToUpper().ToCharArray().Distinct().ToArray()
-                If c = c2 Then
-                    livesLost -= 1
-                End If
-            Next
-            livesLost += 1
+        Dim wrongLetter = True
+        For Each c As Char In hiddenWord.ToUpper()
+            If clicked.Text = c Then
+                wrongLetter = False
+            End If
         Next
+        If wrongLetter Then
+            livesLost += 1
+            clicked.BackColor = Color.Red
+        Else
+            clicked.BackColor = Color.Green
+        End If
 
         For Each c As Char In hiddenWord.ToUpper()
+            foundLetter = False
             For Each c2 As Char In selectedLetters.ToUpper()
                 If c = c2 Then
                     hiddenWordLabel.Text() += (c2 + " ")
@@ -81,17 +99,12 @@ Public Class GameForm_Aiden
         Next
 
         If livesLost = 10 Then
-            wordList.Remove(hiddenWord)
-            failed += 1
-            Reset()
+            gameOver()
             Exit Sub
         End If
 
         If wordFound Then
-            wordList.Remove(hiddenWord)
-            completed += 1
-            Reset()
-            Debug.Print("done done donew oo")
+            gameWon()
             Exit Sub
         End If
 
@@ -99,7 +112,9 @@ Public Class GameForm_Aiden
 
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles wordsLeftLabel.Click
-
+    Private Sub resetClick(sender As Object, e As EventArgs) Handles resetBtn.Click
+        If MsgBox("Are you sure you want to give up? This will count as a failed word!", 4, "Give up?") = 6 Then
+            gameOver()
+        End If
     End Sub
 End Class
