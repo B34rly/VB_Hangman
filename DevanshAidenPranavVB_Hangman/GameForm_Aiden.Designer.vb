@@ -55,7 +55,6 @@ Partial Class GameForm_Aiden
         Me.completedAmountLabel = New System.Windows.Forms.Label()
         Me.failedWordsLabel = New System.Windows.Forms.Label()
         Me.resetBtn = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.menuBtn = New System.Windows.Forms.Button()
         CType(Me.hangmanPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -546,22 +545,6 @@ Partial Class GameForm_Aiden
         Me.resetBtn.Text = "Give up"
         Me.resetBtn.UseVisualStyleBackColor = False
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderSize = 2
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(439, 369)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(8, 8)
-        Me.Button1.TabIndex = 9
-        Me.Button1.TabStop = False
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'menuBtn
         '
         Me.menuBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
@@ -586,7 +569,6 @@ Partial Class GameForm_Aiden
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.menuBtn)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.resetBtn)
         Me.Controls.Add(Me.failedWordsLabel)
         Me.Controls.Add(Me.completedAmountLabel)
@@ -659,6 +641,5 @@ Partial Class GameForm_Aiden
     Friend WithEvents completedAmountLabel As Label
     Friend WithEvents failedWordsLabel As Label
     Friend WithEvents resetBtn As Button
-    Friend WithEvents Button1 As Button
     Friend WithEvents menuBtn As Button
 End Class

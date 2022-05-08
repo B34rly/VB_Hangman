@@ -18,7 +18,7 @@ Public Class GameForm_Aiden
     End Sub
 
     Private Sub Reset()
-        Static Generator As System.Random = New System.Random()
+        Static Generator As Random = New Random()
         If wordList.Count <> 0 Then
             Dim index = Generator.Next(0, wordList.Count - 1)
             hiddenWord = wordList(index)
