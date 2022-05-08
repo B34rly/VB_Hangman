@@ -644,5 +644,3 @@ Partial Class GameForm_Devansh
     Friend WithEvents Button1 As Button
     Friend WithEvents menuBtn As Button
 End Class
-
-End Class
