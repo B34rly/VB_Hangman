@@ -1,8 +1,8 @@
 ﻿Imports System.Text.RegularExpressions
 Public Class GameForm_Aiden
     Dim buttonList
-    ReadOnly wordList As New List(Of String) From
-        {"Toyata", "Mitsubishi", "Hyundai", "Mercedes", "Subaru", "Nissan", "Volkswagen", "Audi", "Bently", "Chevrolet", "Ferrari", "Lamborghini", "Fiat", "Ford", "Honda", "Kia", "Jeep", "Lexus", "Mazda", "Porsche", "Renault", "Suzuki", "Tesla", "Volvo"}
+    Dim wordList As New List(Of String) From
+        {"Toyota", "Mitsubishi", "Hyundai", "Mercedes", "Subaru", "Nissan", "Volkswagen", "Audi", "Bently", "Chevrolet", "Ferrari", "Lamborghini", "Fiat", "Ford", "Honda", "Kia", "Jeep", "Lexus", "Mazda", "Porsche", "Renault", "Suzuki", "Tesla", "Volvo"}
     ReadOnly hangmanPictures As New List(Of Bitmap) From
         {My.Resources.hangman0, My.Resources.hangman1, My.Resources.hangman2, My.Resources.hangman3, My.Resources.hangman4, My.Resources.hangman5, My.Resources.hangman6, My.Resources.hangman7, My.Resources.hangman8, My.Resources.hangman9, My.Resources.hangman10}
     Dim completed = 0
@@ -17,15 +17,15 @@ Public Class GameForm_Aiden
         Reset()
     End Sub
 
-    Private Sub Randomise_Click(sender As Object, e As EventArgs)
-        Reset()
-    End Sub
-
     Private Sub Reset()
-        Dim index = (wordList.Count - 1) * Rnd()
-        hiddenWord = wordList(index)
-        Debug.Print(hiddenWord)
-        Debug.Print(index)
+        Static Generator As System.Random = New System.Random()
+        If wordList.Count <> 0 Then
+            Dim index = Generator.Next(0, wordList.Count - 1)
+            hiddenWord = wordList(index)
+            Debug.Print(hiddenWord)
+            Debug.Print(index)
+        End If
+
 
         completedAmountLabel.Text() = "Completed: " + completed.ToString()
         failedWordsLabel.Text() = "Failed: " + failed.ToString()
@@ -44,7 +44,7 @@ Public Class GameForm_Aiden
 
         For Each currentButton As Button In buttonList
             currentButton.Enabled = True
-            currentButton.BackColor = Color.Gray
+            currentButton.BackColor = Color.FromArgb(100, 200, 200, 200)
         Next
     End Sub
 
@@ -78,9 +78,9 @@ Public Class GameForm_Aiden
         Next
         If wrongLetter Then
             livesLost += 1
-            clicked.BackColor = Color.Red
+            clicked.BackColor = Color.FromArgb(100, 255, 20, 20)
         Else
-            clicked.BackColor = Color.Green
+            clicked.BackColor = Color.FromArgb(100, 20, 255, 20)
         End If
 
         For Each c As Char In hiddenWord.ToUpper()
@@ -115,6 +115,16 @@ Public Class GameForm_Aiden
     Private Sub resetClick(sender As Object, e As EventArgs) Handles resetBtn.Click
         If MsgBox("Are you sure you want to give up? This will count as a failed word!", 4, "Give up?") = 6 Then
             gameOver()
+        End If
+    End Sub
+
+    Private Sub menuBtn_Click(sender As Object, e As EventArgs) Handles menuBtn.Click
+        If MsgBox("Do you want to reset all your progress as well?", 4, "Reset progress too?") = 6 Then
+            MainMenu.Show()
+            Me.Close()
+        Else
+            MainMenu.Show()
+            Me.Hide()
         End If
     End Sub
 End Class
