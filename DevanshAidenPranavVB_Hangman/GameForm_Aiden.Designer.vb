@@ -601,6 +601,7 @@ Partial Class GameForm_Aiden
         Me.Controls.Add(Me.buttonY)
         Me.Controls.Add(Me.buttonZ)
         Me.Controls.Add(Me.hiddenWordLabel)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "GameForm_Aiden"
         Me.Text = "Hangman: Car Brands"
         CType(Me.hangmanPicture, System.ComponentModel.ISupportInitialize).EndInit()

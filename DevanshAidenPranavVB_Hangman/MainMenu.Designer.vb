@@ -226,6 +226,7 @@ Partial Class MainMenu
         Me.Controls.Add(Me.exitBtn)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.bgPanel)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "MainMenu"
         Me.Text = "Hangman: Main Menu"

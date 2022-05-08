@@ -599,6 +599,7 @@ Partial Class GameForm_Devansh
         Me.Controls.Add(Me.buttonY)
         Me.Controls.Add(Me.buttonZ)
         Me.Controls.Add(Me.hiddenWordLabel)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "GameForm_Devansh"
         Me.Text = "Hangman: Countries"
         CType(Me.hangmanPicture, System.ComponentModel.ISupportInitialize).EndInit()
