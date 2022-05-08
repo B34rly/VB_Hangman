@@ -6,6 +6,7 @@
     <StartupObject>DevanshAidenPranavVB_Hangman.MainMenu</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <Authors>Devansh, Aiden, Pranav</Authors>
   </PropertyGroup>
 
   <ItemGroup>

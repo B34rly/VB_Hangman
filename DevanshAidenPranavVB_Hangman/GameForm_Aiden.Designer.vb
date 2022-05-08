@@ -64,7 +64,7 @@ Partial Class GameForm_Aiden
         Me.hiddenWordLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.hiddenWordLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.hiddenWordLabel.Font = New System.Drawing.Font("Source Code Pro", 21.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
-        Me.hiddenWordLabel.Location = New System.Drawing.Point(221, 27)
+        Me.hiddenWordLabel.Location = New System.Drawing.Point(225, 40)
         Me.hiddenWordLabel.Name = "hiddenWordLabel"
         Me.hiddenWordLabel.Size = New System.Drawing.Size(439, 70)
         Me.hiddenWordLabel.TabIndex = 0
@@ -538,7 +538,7 @@ Partial Class GameForm_Aiden
         Me.resetBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.resetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.resetBtn.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.resetBtn.Location = New System.Drawing.Point(683, 27)
+        Me.resetBtn.Location = New System.Drawing.Point(687, 40)
         Me.resetBtn.Name = "resetBtn"
         Me.resetBtn.Size = New System.Drawing.Size(105, 70)
         Me.resetBtn.TabIndex = 8
@@ -553,7 +553,7 @@ Partial Class GameForm_Aiden
         Me.menuBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.menuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.menuBtn.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.menuBtn.Location = New System.Drawing.Point(28, 27)
+        Me.menuBtn.Location = New System.Drawing.Point(32, 40)
         Me.menuBtn.Name = "menuBtn"
         Me.menuBtn.Size = New System.Drawing.Size(165, 70)
         Me.menuBtn.TabIndex = 10
@@ -563,8 +563,8 @@ Partial Class GameForm_Aiden
         '
         'GameForm_Aiden
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(800, 450)

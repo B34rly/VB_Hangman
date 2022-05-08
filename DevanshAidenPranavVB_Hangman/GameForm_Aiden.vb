@@ -18,7 +18,7 @@ Public Class GameForm_Aiden
     End Sub
 
     Private Sub Reset()
-        Static Generator As Random = New Random()
+        Static Generator As New Random()
         If wordList.Count <> 0 Then
             Dim index = Generator.Next(0, wordList.Count - 1)
             hiddenWord = wordList(index)
@@ -48,14 +48,14 @@ Public Class GameForm_Aiden
         Next
     End Sub
 
-    Private Sub gameOver()
+    Private Sub GameOver()
         wordList.Remove(hiddenWord)
         failed += 1
         MsgBox("The man has been hanged, you couldn't save him! The correct word was: " + hiddenWord, 1, "Game Lost!")
         Reset()
     End Sub
 
-    Private Sub gameWon()
+    Private Sub GameWon()
         wordList.Remove(hiddenWord)
         completed += 1
         MsgBox("You saved the man! He is free once more! The word was: " + hiddenWord, 1, "Game Won!")
@@ -99,12 +99,12 @@ Public Class GameForm_Aiden
         Next
 
         If livesLost = 10 Then
-            gameOver()
+            GameOver()
             Exit Sub
         End If
 
         If wordFound Then
-            gameWon()
+            GameWon()
             Exit Sub
         End If
 
@@ -112,13 +112,13 @@ Public Class GameForm_Aiden
 
     End Sub
 
-    Private Sub resetClick(sender As Object, e As EventArgs) Handles resetBtn.Click
+    Private Sub ResetClick(sender As Object, e As EventArgs) Handles resetBtn.Click
         If MsgBox("Are you sure you want to give up? This will count as a failed word!", 4, "Give up?") = 6 Then
-            gameOver()
+            GameOver()
         End If
     End Sub
 
-    Private Sub menuBtn_Click(sender As Object, e As EventArgs) Handles menuBtn.Click
+    Private Sub MenuBtn_Click(sender As Object, e As EventArgs) Handles menuBtn.Click
         If MsgBox("Do you want to reset all your progress as well?", 4, "Reset progress too?") = 6 Then
             MainMenu.Show()
             Me.Close()
