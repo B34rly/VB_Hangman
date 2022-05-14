@@ -56,6 +56,8 @@ Partial Class GameForm_Aiden
         Me.failedWordsLabel = New System.Windows.Forms.Label()
         Me.resetBtn = New System.Windows.Forms.Button()
         Me.menuBtn = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.songButton = New System.Windows.Forms.Button()
         CType(Me.hangmanPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -64,10 +66,9 @@ Partial Class GameForm_Aiden
         Me.hiddenWordLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.hiddenWordLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.hiddenWordLabel.Font = New System.Drawing.Font("Source Code Pro", 21.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
-        Me.hiddenWordLabel.Location = New System.Drawing.Point(270, 48)
-        Me.hiddenWordLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.hiddenWordLabel.Location = New System.Drawing.Point(225, 40)
         Me.hiddenWordLabel.Name = "hiddenWordLabel"
-        Me.hiddenWordLabel.Size = New System.Drawing.Size(526, 84)
+        Me.hiddenWordLabel.Size = New System.Drawing.Size(439, 70)
         Me.hiddenWordLabel.TabIndex = 0
         Me.hiddenWordLabel.Text = "_ _ _ _ _ _ _ _ _ _ _ _ _"
         Me.hiddenWordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -80,10 +81,9 @@ Partial Class GameForm_Aiden
         Me.buttonA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonA.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonA.Location = New System.Drawing.Point(299, 288)
-        Me.buttonA.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonA.Location = New System.Drawing.Point(249, 240)
         Me.buttonA.Name = "buttonA"
-        Me.buttonA.Size = New System.Drawing.Size(60, 60)
+        Me.buttonA.Size = New System.Drawing.Size(50, 50)
         Me.buttonA.TabIndex = 2
         Me.buttonA.TabStop = False
         Me.buttonA.Text = "A"
@@ -97,10 +97,9 @@ Partial Class GameForm_Aiden
         Me.buttonB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonB.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonB.Location = New System.Drawing.Point(366, 288)
-        Me.buttonB.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonB.Location = New System.Drawing.Point(305, 240)
         Me.buttonB.Name = "buttonB"
-        Me.buttonB.Size = New System.Drawing.Size(60, 60)
+        Me.buttonB.Size = New System.Drawing.Size(50, 50)
         Me.buttonB.TabIndex = 3
         Me.buttonB.TabStop = False
         Me.buttonB.Text = "B"
@@ -114,10 +113,9 @@ Partial Class GameForm_Aiden
         Me.buttonC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonC.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonC.Location = New System.Drawing.Point(433, 288)
-        Me.buttonC.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonC.Location = New System.Drawing.Point(361, 240)
         Me.buttonC.Name = "buttonC"
-        Me.buttonC.Size = New System.Drawing.Size(60, 60)
+        Me.buttonC.Size = New System.Drawing.Size(50, 50)
         Me.buttonC.TabIndex = 2
         Me.buttonC.TabStop = False
         Me.buttonC.Text = "C"
@@ -131,10 +129,9 @@ Partial Class GameForm_Aiden
         Me.buttonD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonD.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonD.Location = New System.Drawing.Point(500, 288)
-        Me.buttonD.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonD.Location = New System.Drawing.Point(417, 240)
         Me.buttonD.Name = "buttonD"
-        Me.buttonD.Size = New System.Drawing.Size(60, 60)
+        Me.buttonD.Size = New System.Drawing.Size(50, 50)
         Me.buttonD.TabIndex = 2
         Me.buttonD.TabStop = False
         Me.buttonD.Text = "D"
@@ -149,10 +146,9 @@ Partial Class GameForm_Aiden
         Me.buttonE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonE.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonE.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonE.Location = New System.Drawing.Point(568, 288)
-        Me.buttonE.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonE.Location = New System.Drawing.Point(473, 240)
         Me.buttonE.Name = "buttonE"
-        Me.buttonE.Size = New System.Drawing.Size(60, 60)
+        Me.buttonE.Size = New System.Drawing.Size(50, 50)
         Me.buttonE.TabIndex = 2
         Me.buttonE.TabStop = False
         Me.buttonE.Text = "E"
@@ -166,10 +162,9 @@ Partial Class GameForm_Aiden
         Me.buttonF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonF.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonF.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonF.Location = New System.Drawing.Point(635, 288)
-        Me.buttonF.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonF.Location = New System.Drawing.Point(529, 240)
         Me.buttonF.Name = "buttonF"
-        Me.buttonF.Size = New System.Drawing.Size(60, 60)
+        Me.buttonF.Size = New System.Drawing.Size(50, 50)
         Me.buttonF.TabIndex = 2
         Me.buttonF.TabStop = False
         Me.buttonF.Text = "F"
@@ -183,10 +178,9 @@ Partial Class GameForm_Aiden
         Me.buttonG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonG.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonG.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonG.Location = New System.Drawing.Point(703, 288)
-        Me.buttonG.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonG.Location = New System.Drawing.Point(586, 240)
         Me.buttonG.Name = "buttonG"
-        Me.buttonG.Size = New System.Drawing.Size(60, 60)
+        Me.buttonG.Size = New System.Drawing.Size(50, 50)
         Me.buttonG.TabIndex = 2
         Me.buttonG.TabStop = False
         Me.buttonG.Text = "G"
@@ -200,10 +194,9 @@ Partial Class GameForm_Aiden
         Me.buttonH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonH.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonH.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonH.Location = New System.Drawing.Point(770, 288)
-        Me.buttonH.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonH.Location = New System.Drawing.Point(642, 240)
         Me.buttonH.Name = "buttonH"
-        Me.buttonH.Size = New System.Drawing.Size(60, 60)
+        Me.buttonH.Size = New System.Drawing.Size(50, 50)
         Me.buttonH.TabIndex = 2
         Me.buttonH.TabStop = False
         Me.buttonH.Text = "H"
@@ -217,10 +210,9 @@ Partial Class GameForm_Aiden
         Me.buttonI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonI.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonI.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonI.Location = New System.Drawing.Point(838, 288)
-        Me.buttonI.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonI.Location = New System.Drawing.Point(698, 240)
         Me.buttonI.Name = "buttonI"
-        Me.buttonI.Size = New System.Drawing.Size(60, 60)
+        Me.buttonI.Size = New System.Drawing.Size(50, 50)
         Me.buttonI.TabIndex = 2
         Me.buttonI.TabStop = False
         Me.buttonI.Text = "I"
@@ -234,10 +226,9 @@ Partial Class GameForm_Aiden
         Me.buttonJ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonJ.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonJ.Location = New System.Drawing.Point(300, 355)
-        Me.buttonJ.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonJ.Location = New System.Drawing.Point(250, 296)
         Me.buttonJ.Name = "buttonJ"
-        Me.buttonJ.Size = New System.Drawing.Size(60, 60)
+        Me.buttonJ.Size = New System.Drawing.Size(50, 50)
         Me.buttonJ.TabIndex = 2
         Me.buttonJ.TabStop = False
         Me.buttonJ.Text = "J"
@@ -251,10 +242,9 @@ Partial Class GameForm_Aiden
         Me.buttonK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonK.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonK.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonK.Location = New System.Drawing.Point(367, 355)
-        Me.buttonK.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonK.Location = New System.Drawing.Point(306, 296)
         Me.buttonK.Name = "buttonK"
-        Me.buttonK.Size = New System.Drawing.Size(60, 60)
+        Me.buttonK.Size = New System.Drawing.Size(50, 50)
         Me.buttonK.TabIndex = 2
         Me.buttonK.TabStop = False
         Me.buttonK.Text = "K"
@@ -268,10 +258,9 @@ Partial Class GameForm_Aiden
         Me.buttonL.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonL.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonL.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonL.Location = New System.Drawing.Point(434, 355)
-        Me.buttonL.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonL.Location = New System.Drawing.Point(362, 296)
         Me.buttonL.Name = "buttonL"
-        Me.buttonL.Size = New System.Drawing.Size(60, 60)
+        Me.buttonL.Size = New System.Drawing.Size(50, 50)
         Me.buttonL.TabIndex = 2
         Me.buttonL.TabStop = False
         Me.buttonL.Text = "L"
@@ -285,10 +274,9 @@ Partial Class GameForm_Aiden
         Me.buttonM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonM.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonM.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonM.Location = New System.Drawing.Point(502, 355)
-        Me.buttonM.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonM.Location = New System.Drawing.Point(418, 296)
         Me.buttonM.Name = "buttonM"
-        Me.buttonM.Size = New System.Drawing.Size(60, 60)
+        Me.buttonM.Size = New System.Drawing.Size(50, 50)
         Me.buttonM.TabIndex = 2
         Me.buttonM.TabStop = False
         Me.buttonM.Text = "M"
@@ -302,10 +290,9 @@ Partial Class GameForm_Aiden
         Me.buttonN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonN.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonN.Location = New System.Drawing.Point(569, 355)
-        Me.buttonN.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonN.Location = New System.Drawing.Point(474, 296)
         Me.buttonN.Name = "buttonN"
-        Me.buttonN.Size = New System.Drawing.Size(60, 60)
+        Me.buttonN.Size = New System.Drawing.Size(50, 50)
         Me.buttonN.TabIndex = 2
         Me.buttonN.TabStop = False
         Me.buttonN.Text = "N"
@@ -319,10 +306,9 @@ Partial Class GameForm_Aiden
         Me.buttonO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonO.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonO.Location = New System.Drawing.Point(637, 355)
-        Me.buttonO.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonO.Location = New System.Drawing.Point(531, 296)
         Me.buttonO.Name = "buttonO"
-        Me.buttonO.Size = New System.Drawing.Size(60, 60)
+        Me.buttonO.Size = New System.Drawing.Size(50, 50)
         Me.buttonO.TabIndex = 2
         Me.buttonO.TabStop = False
         Me.buttonO.Text = "O"
@@ -336,10 +322,9 @@ Partial Class GameForm_Aiden
         Me.buttonP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonP.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonP.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonP.Location = New System.Drawing.Point(704, 355)
-        Me.buttonP.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonP.Location = New System.Drawing.Point(587, 296)
         Me.buttonP.Name = "buttonP"
-        Me.buttonP.Size = New System.Drawing.Size(60, 60)
+        Me.buttonP.Size = New System.Drawing.Size(50, 50)
         Me.buttonP.TabIndex = 2
         Me.buttonP.TabStop = False
         Me.buttonP.Text = "P"
@@ -353,10 +338,9 @@ Partial Class GameForm_Aiden
         Me.buttonQ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonQ.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonQ.Location = New System.Drawing.Point(770, 355)
-        Me.buttonQ.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonQ.Location = New System.Drawing.Point(642, 296)
         Me.buttonQ.Name = "buttonQ"
-        Me.buttonQ.Size = New System.Drawing.Size(60, 60)
+        Me.buttonQ.Size = New System.Drawing.Size(50, 50)
         Me.buttonQ.TabIndex = 2
         Me.buttonQ.TabStop = False
         Me.buttonQ.Text = "Q"
@@ -370,10 +354,9 @@ Partial Class GameForm_Aiden
         Me.buttonR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonR.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonR.Location = New System.Drawing.Point(838, 355)
-        Me.buttonR.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonR.Location = New System.Drawing.Point(698, 296)
         Me.buttonR.Name = "buttonR"
-        Me.buttonR.Size = New System.Drawing.Size(60, 60)
+        Me.buttonR.Size = New System.Drawing.Size(50, 50)
         Me.buttonR.TabIndex = 2
         Me.buttonR.TabStop = False
         Me.buttonR.Text = "R"
@@ -387,10 +370,9 @@ Partial Class GameForm_Aiden
         Me.buttonS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonS.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonS.Location = New System.Drawing.Point(332, 422)
-        Me.buttonS.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonS.Location = New System.Drawing.Point(277, 352)
         Me.buttonS.Name = "buttonS"
-        Me.buttonS.Size = New System.Drawing.Size(60, 60)
+        Me.buttonS.Size = New System.Drawing.Size(50, 50)
         Me.buttonS.TabIndex = 2
         Me.buttonS.TabStop = False
         Me.buttonS.Text = "S"
@@ -404,10 +386,9 @@ Partial Class GameForm_Aiden
         Me.buttonT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonT.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonT.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonT.Location = New System.Drawing.Point(400, 422)
-        Me.buttonT.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonT.Location = New System.Drawing.Point(333, 352)
         Me.buttonT.Name = "buttonT"
-        Me.buttonT.Size = New System.Drawing.Size(60, 60)
+        Me.buttonT.Size = New System.Drawing.Size(50, 50)
         Me.buttonT.TabIndex = 2
         Me.buttonT.TabStop = False
         Me.buttonT.Text = "T"
@@ -421,10 +402,9 @@ Partial Class GameForm_Aiden
         Me.buttonU.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonU.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonU.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonU.Location = New System.Drawing.Point(467, 422)
-        Me.buttonU.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonU.Location = New System.Drawing.Point(389, 352)
         Me.buttonU.Name = "buttonU"
-        Me.buttonU.Size = New System.Drawing.Size(60, 60)
+        Me.buttonU.Size = New System.Drawing.Size(50, 50)
         Me.buttonU.TabIndex = 2
         Me.buttonU.TabStop = False
         Me.buttonU.Text = "U"
@@ -438,10 +418,9 @@ Partial Class GameForm_Aiden
         Me.buttonV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonV.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonV.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonV.Location = New System.Drawing.Point(534, 422)
-        Me.buttonV.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonV.Location = New System.Drawing.Point(445, 352)
         Me.buttonV.Name = "buttonV"
-        Me.buttonV.Size = New System.Drawing.Size(60, 60)
+        Me.buttonV.Size = New System.Drawing.Size(50, 50)
         Me.buttonV.TabIndex = 2
         Me.buttonV.TabStop = False
         Me.buttonV.Text = "V"
@@ -455,10 +434,9 @@ Partial Class GameForm_Aiden
         Me.buttonW.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonW.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonW.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonW.Location = New System.Drawing.Point(600, 422)
-        Me.buttonW.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonW.Location = New System.Drawing.Point(500, 352)
         Me.buttonW.Name = "buttonW"
-        Me.buttonW.Size = New System.Drawing.Size(60, 60)
+        Me.buttonW.Size = New System.Drawing.Size(50, 50)
         Me.buttonW.TabIndex = 2
         Me.buttonW.TabStop = False
         Me.buttonW.Text = "W"
@@ -472,10 +450,9 @@ Partial Class GameForm_Aiden
         Me.buttonX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonX.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonX.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonX.Location = New System.Drawing.Point(670, 422)
-        Me.buttonX.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonX.Location = New System.Drawing.Point(558, 352)
         Me.buttonX.Name = "buttonX"
-        Me.buttonX.Size = New System.Drawing.Size(60, 60)
+        Me.buttonX.Size = New System.Drawing.Size(50, 50)
         Me.buttonX.TabIndex = 2
         Me.buttonX.TabStop = False
         Me.buttonX.Text = "X"
@@ -489,10 +466,9 @@ Partial Class GameForm_Aiden
         Me.buttonY.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonY.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonY.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonY.Location = New System.Drawing.Point(737, 422)
-        Me.buttonY.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonY.Location = New System.Drawing.Point(614, 352)
         Me.buttonY.Name = "buttonY"
-        Me.buttonY.Size = New System.Drawing.Size(60, 60)
+        Me.buttonY.Size = New System.Drawing.Size(50, 50)
         Me.buttonY.TabIndex = 2
         Me.buttonY.TabStop = False
         Me.buttonY.Text = "Y"
@@ -506,10 +482,9 @@ Partial Class GameForm_Aiden
         Me.buttonZ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonZ.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.buttonZ.Location = New System.Drawing.Point(803, 422)
-        Me.buttonZ.Margin = New System.Windows.Forms.Padding(4)
+        Me.buttonZ.Location = New System.Drawing.Point(669, 352)
         Me.buttonZ.Name = "buttonZ"
-        Me.buttonZ.Size = New System.Drawing.Size(60, 60)
+        Me.buttonZ.Size = New System.Drawing.Size(50, 50)
         Me.buttonZ.TabIndex = 2
         Me.buttonZ.TabStop = False
         Me.buttonZ.Text = "Z"
@@ -518,10 +493,9 @@ Partial Class GameForm_Aiden
         'hangmanPicture
         '
         Me.hangmanPicture.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.hangmanPicture.Location = New System.Drawing.Point(34, 178)
-        Me.hangmanPicture.Margin = New System.Windows.Forms.Padding(4)
+        Me.hangmanPicture.Location = New System.Drawing.Point(28, 148)
         Me.hangmanPicture.Name = "hangmanPicture"
-        Me.hangmanPicture.Size = New System.Drawing.Size(230, 307)
+        Me.hangmanPicture.Size = New System.Drawing.Size(192, 256)
         Me.hangmanPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.hangmanPicture.TabIndex = 4
         Me.hangmanPicture.TabStop = False
@@ -531,10 +505,9 @@ Partial Class GameForm_Aiden
         Me.wordsLeftLabel.AutoSize = True
         Me.wordsLeftLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.wordsLeftLabel.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.wordsLeftLabel.Location = New System.Drawing.Point(294, 180)
-        Me.wordsLeftLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.wordsLeftLabel.Location = New System.Drawing.Point(245, 150)
         Me.wordsLeftLabel.Name = "wordsLeftLabel"
-        Me.wordsLeftLabel.Size = New System.Drawing.Size(196, 31)
+        Me.wordsLeftLabel.Size = New System.Drawing.Size(168, 25)
         Me.wordsLeftLabel.TabIndex = 5
         Me.wordsLeftLabel.Text = "Words Left: x"
         '
@@ -543,10 +516,9 @@ Partial Class GameForm_Aiden
         Me.completedAmountLabel.AutoSize = True
         Me.completedAmountLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.completedAmountLabel.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.completedAmountLabel.Location = New System.Drawing.Point(294, 210)
-        Me.completedAmountLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.completedAmountLabel.Location = New System.Drawing.Point(245, 175)
         Me.completedAmountLabel.Name = "completedAmountLabel"
-        Me.completedAmountLabel.Size = New System.Drawing.Size(182, 31)
+        Me.completedAmountLabel.Size = New System.Drawing.Size(156, 25)
         Me.completedAmountLabel.TabIndex = 6
         Me.completedAmountLabel.Text = "Completed: x"
         '
@@ -555,10 +527,9 @@ Partial Class GameForm_Aiden
         Me.failedWordsLabel.AutoSize = True
         Me.failedWordsLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.failedWordsLabel.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.failedWordsLabel.Location = New System.Drawing.Point(294, 240)
-        Me.failedWordsLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.failedWordsLabel.Location = New System.Drawing.Point(245, 200)
         Me.failedWordsLabel.Name = "failedWordsLabel"
-        Me.failedWordsLabel.Size = New System.Drawing.Size(140, 31)
+        Me.failedWordsLabel.Size = New System.Drawing.Size(120, 25)
         Me.failedWordsLabel.TabIndex = 7
         Me.failedWordsLabel.Text = "Failed: x"
         '
@@ -570,10 +541,9 @@ Partial Class GameForm_Aiden
         Me.resetBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.resetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.resetBtn.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.resetBtn.Location = New System.Drawing.Point(824, 48)
-        Me.resetBtn.Margin = New System.Windows.Forms.Padding(4)
+        Me.resetBtn.Location = New System.Drawing.Point(687, 40)
         Me.resetBtn.Name = "resetBtn"
-        Me.resetBtn.Size = New System.Drawing.Size(126, 84)
+        Me.resetBtn.Size = New System.Drawing.Size(105, 70)
         Me.resetBtn.TabIndex = 8
         Me.resetBtn.Text = "Give up"
         Me.resetBtn.UseVisualStyleBackColor = False
@@ -586,22 +556,53 @@ Partial Class GameForm_Aiden
         Me.menuBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.menuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.menuBtn.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.menuBtn.Location = New System.Drawing.Point(38, 48)
-        Me.menuBtn.Margin = New System.Windows.Forms.Padding(4)
+        Me.menuBtn.Location = New System.Drawing.Point(32, 40)
         Me.menuBtn.Name = "menuBtn"
-        Me.menuBtn.Size = New System.Drawing.Size(198, 84)
+        Me.menuBtn.Size = New System.Drawing.Size(165, 70)
         Me.menuBtn.TabIndex = 10
         Me.menuBtn.TabStop = False
         Me.menuBtn.Text = "Return To Menu"
         Me.menuBtn.UseVisualStyleBackColor = False
         '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Source Code Pro Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(558, 148)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(190, 77)
+        Me.Label1.TabIndex = 11
+        Me.Label1.Text = "24:00"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'songButton
+        '
+        Me.songButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.songButton.BackgroundImage = Global.DevanshAidenPranavVB_Hangman.My.Resources.Resources.icons8_audio_100
+        Me.songButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.songButton.FlatAppearance.BorderSize = 0
+        Me.songButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.songButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
+        Me.songButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.songButton.Font = New System.Drawing.Font("Source Code Pro", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
+        Me.songButton.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.songButton.Location = New System.Drawing.Point(742, 388)
+        Me.songButton.Name = "songButton"
+        Me.songButton.Size = New System.Drawing.Size(50, 50)
+        Me.songButton.TabIndex = 12
+        Me.songButton.TabStop = False
+        Me.songButton.UseVisualStyleBackColor = False
+        '
         'GameForm_Aiden
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(144.0!, 144.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(960, 540)
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.songButton)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.menuBtn)
         Me.Controls.Add(Me.resetBtn)
         Me.Controls.Add(Me.failedWordsLabel)
@@ -636,7 +637,6 @@ Partial Class GameForm_Aiden
         Me.Controls.Add(Me.buttonZ)
         Me.Controls.Add(Me.hiddenWordLabel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "GameForm_Aiden"
         Me.Text = "Hangman: Car Brands"
         CType(Me.hangmanPicture, System.ComponentModel.ISupportInitialize).EndInit()
@@ -678,4 +678,6 @@ Partial Class GameForm_Aiden
     Friend WithEvents failedWordsLabel As Label
     Friend WithEvents resetBtn As Button
     Friend WithEvents menuBtn As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents songButton As Button
 End Class

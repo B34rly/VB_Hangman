@@ -1,5 +1,5 @@
 ﻿Public Class MainMenu
-
+    Public musicPlaying As Boolean = True
     Private Sub onshow(sender As Object, e As EventArgs) Handles Me.VisibleChanged
         playBtn.Visible = True
         exitBtn.Visible = True
@@ -44,7 +44,7 @@
         TopicLbl.Visible = True
         TopicLbl.Text = "Credits"
         infoLbl.Visible = True
-        infoLbl.Text = ""
+        infoLbl.Text = "Music: Evan King - Vapor"
 
         Devansh.Visible = False
         Aiden.Visible = False
@@ -64,5 +64,23 @@ There are 24 total words of different length in each topic, can you solve them a
         Devansh.Visible = False
         Aiden.Visible = False
         Pranav.Visible = False
+    End Sub
+
+    Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        My.Computer.Audio.Play(My.Resources.synth1,
+          AudioPlayMode.BackgroundLoop)
+    End Sub
+
+    Private Sub songButton_Click(sender As Object, e As EventArgs) Handles songButton.Click
+        If musicPlaying Then
+            My.Computer.Audio.Stop()
+            songButton.BackgroundImage = My.Resources.icons8_mute_100
+            musicPlaying = False
+        Else
+            My.Computer.Audio.Play(My.Resources.synth1,
+          AudioPlayMode.BackgroundLoop)
+            songButton.BackgroundImage = My.Resources.icons8_audio_100
+            musicPlaying = True
+        End If
     End Sub
 End Class

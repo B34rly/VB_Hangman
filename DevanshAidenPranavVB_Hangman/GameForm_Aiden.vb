@@ -1,4 +1,5 @@
 ﻿Imports System.Text.RegularExpressions
+Imports System.Timers
 Public Class GameForm_Aiden
     Dim buttonList
     Dim wordList As New List(Of String) From
@@ -10,11 +11,68 @@ Public Class GameForm_Aiden
     Dim hiddenWord = ""
     Dim selectedLetters As String
     Dim livesLost = 0
+    Dim TimeLimit = TimeSpan.FromMinutes(24)
+    Dim Timer As Timer
+    Dim Start As DateTime
+    Dim whenPaused As TimeSpan
 
-    Private Sub GameForm_Aiden_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Async Sub GameForm_Aiden_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         buttonList = New List(Of Button) From
         {buttonA, buttonB, buttonC, buttonD, buttonE, buttonF, buttonG, buttonH, buttonI, buttonJ, buttonK, buttonL, buttonM, buttonN, buttonO, buttonP, buttonQ, buttonR, buttonS, buttonT, buttonU, buttonV, buttonW, buttonX, buttonY, buttonZ}
         Reset()
+
+        Start = DateTime.Now
+        Timer = New Timer()
+        Timer.Interval = 500
+        AddHandler Timer.Elapsed, AddressOf TimerEvent
+        Timer.Enabled = True
+    End Sub
+
+    Private Sub onpause() Handles MyBase.VisibleChanged
+        If Me.Visible = True Then
+            Timer.Enabled = True
+            Start = Date.Now.Subtract(whenPaused)
+        Else
+            Timer.Enabled = False
+            whenPaused = DateTime.Now - Start
+        End If
+    End Sub
+
+    Private Sub onclose() Handles MyBase.FormClosed
+        Timer.Enabled = False
+    End Sub
+
+    Private Sub TimerEvent(ByVal source As Object, ByVal e As ElapsedEventArgs)
+        Debug.Print("Event Raised at {0:HH:mm:ss.fff}", e.SignalTime)
+        Dim timeLeft = (TimeLimit - (DateTime.Now - Start))
+        If timeLeft <= TimeSpan.Zero Then
+            Me.Invoke(Sub()
+                          Label1.Text = timeLeft.ToString("00:00")
+                      End Sub)
+            Timer.Enabled = False
+            GameFinish("time")
+        Else
+            Me.Invoke(Sub()
+                          Label1.Text = timeLeft.ToString("mm\:ss")
+                      End Sub)
+        End If
+    End Sub
+
+    Private Sub SetTimer()
+        Label1.Text = (TimeLimit - (DateTime.Now - Start)).ToString("mm\:ss")
+    End Sub
+
+    Private Sub songButton_Click(sender As Object, e As EventArgs) Handles songButton.Click
+        If MainMenu.musicPlaying Then
+            My.Computer.Audio.Stop()
+            songButton.BackgroundImage = My.Resources.icons8_mute_100
+            MainMenu.musicPlaying = False
+        Else
+            My.Computer.Audio.Play(My.Resources.synth1,
+          AudioPlayMode.BackgroundLoop)
+            songButton.BackgroundImage = My.Resources.icons8_audio_100
+            MainMenu.musicPlaying = True
+        End If
     End Sub
 
     Private Sub Reset()
@@ -24,12 +82,15 @@ Public Class GameForm_Aiden
             hiddenWord = wordList(index)
             Debug.Print(hiddenWord)
             Debug.Print(index)
+        Else
+            GameFinish("emptyList")
+            Exit Sub
         End If
 
 
-        completedAmountLabel.Text() = "Completed: " + completed.ToString()
-        failedWordsLabel.Text() = "Failed: " + failed.ToString()
-        wordsLeftLabel.Text() = "Words Left: " + wordList.Count.ToString()
+        completedAmountLabel.Text() = "Completed " + completed.ToString()
+        failedWordsLabel.Text() = "Failed " + failed.ToString()
+        wordsLeftLabel.Text() = "Words Left " + wordList.Count.ToString()
 
         livesLost = 0
         hiddenWordLabel.Text() = ""
@@ -47,7 +108,13 @@ Public Class GameForm_Aiden
             currentButton.BackColor = Color.FromArgb(100, 200, 200, 200)
         Next
     End Sub
-
+    Private Sub GameFinish(reason)
+        If reason = "time" Then
+            MsgBox("You ran out of time to save everyone! There were still " + wordList.Count - 1 + " men left! Try again later idek", 1, "Game Over!")
+        ElseIf reason = "emptyList" Then
+            MsgBox("You've gone through all the words and saved everyone you could! " + hiddenWord, 1, "Game Over!")
+        End If
+    End Sub
     Private Sub GameOver()
         wordList.Remove(hiddenWord)
         failed += 1
