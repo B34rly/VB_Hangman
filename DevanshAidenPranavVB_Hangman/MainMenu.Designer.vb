@@ -23,7 +23,7 @@ Partial Class MainMenu
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainMenu))
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.titleLabel = New System.Windows.Forms.Label()
         Me.Devansh = New System.Windows.Forms.Button()
         Me.Aiden = New System.Windows.Forms.Button()
         Me.Pranav = New System.Windows.Forms.Button()
@@ -33,23 +33,23 @@ Partial Class MainMenu
         Me.creditsBtn = New System.Windows.Forms.Button()
         Me.bgPanel = New System.Windows.Forms.Panel()
         Me.infoLbl = New System.Windows.Forms.Label()
-        Me.TopicLbl = New System.Windows.Forms.Label()
-        Me.songButton = New System.Windows.Forms.Button()
+        Me.topicLbl = New System.Windows.Forms.Label()
+        Me.songBtn = New System.Windows.Forms.Button()
         Me.bgPanel.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label1
+        'titleLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label1.Font = New System.Drawing.Font("Source Code Pro", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label1.Location = New System.Drawing.Point(12, 28)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(379, 101)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Hangman"
+        Me.titleLabel.AutoSize = True
+        Me.titleLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.titleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.titleLabel.Font = New System.Drawing.Font("Source Code Pro", 48.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
+        Me.titleLabel.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.titleLabel.Location = New System.Drawing.Point(12, 28)
+        Me.titleLabel.Name = "titleLabel"
+        Me.titleLabel.Size = New System.Drawing.Size(379, 101)
+        Me.titleLabel.TabIndex = 0
+        Me.titleLabel.Text = "Hangman"
         '
         'Devansh
         '
@@ -177,7 +177,7 @@ Partial Class MainMenu
         '
         Me.bgPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.bgPanel.Controls.Add(Me.infoLbl)
-        Me.bgPanel.Controls.Add(Me.TopicLbl)
+        Me.bgPanel.Controls.Add(Me.topicLbl)
         Me.bgPanel.Controls.Add(Me.Devansh)
         Me.bgPanel.Controls.Add(Me.Aiden)
         Me.bgPanel.Controls.Add(Me.Pranav)
@@ -200,38 +200,38 @@ Partial Class MainMenu
         Me.infoLbl.Text = "infoLbl"
         Me.infoLbl.Visible = False
         '
-        'TopicLbl
+        'topicLbl
         '
-        Me.TopicLbl.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+        Me.topicLbl.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TopicLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.TopicLbl.Font = New System.Drawing.Font("Source Code Pro Black", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
-        Me.TopicLbl.Location = New System.Drawing.Point(8, 17)
-        Me.TopicLbl.Name = "TopicLbl"
-        Me.TopicLbl.Size = New System.Drawing.Size(481, 55)
-        Me.TopicLbl.TabIndex = 4
-        Me.TopicLbl.Text = "Topics"
-        Me.TopicLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.TopicLbl.Visible = False
+        Me.topicLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.topicLbl.Font = New System.Drawing.Font("Source Code Pro Black", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
+        Me.topicLbl.Location = New System.Drawing.Point(8, 17)
+        Me.topicLbl.Name = "topicLbl"
+        Me.topicLbl.Size = New System.Drawing.Size(481, 55)
+        Me.topicLbl.TabIndex = 4
+        Me.topicLbl.Text = "Topics"
+        Me.topicLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.topicLbl.Visible = False
         '
-        'songButton
+        'songBtn
         '
-        Me.songButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.songButton.BackgroundImage = Global.DevanshAidenPranavVB_Hangman.My.Resources.Resources.icons8_audio_100
-        Me.songButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.songButton.FlatAppearance.BorderSize = 0
-        Me.songButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.songButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
-        Me.songButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.songButton.Font = New System.Drawing.Font("Source Code Pro", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
-        Me.songButton.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.songButton.Location = New System.Drawing.Point(729, 28)
-        Me.songButton.Name = "songButton"
-        Me.songButton.Size = New System.Drawing.Size(50, 50)
-        Me.songButton.TabIndex = 8
-        Me.songButton.TabStop = False
-        Me.songButton.UseVisualStyleBackColor = False
+        Me.songBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.songBtn.BackgroundImage = Global.DevanshAidenPranavVB_Hangman.My.Resources.Resources.icons8_audio_100
+        Me.songBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.songBtn.FlatAppearance.BorderSize = 0
+        Me.songBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.songBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
+        Me.songBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.songBtn.Font = New System.Drawing.Font("Source Code Pro", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
+        Me.songBtn.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.songBtn.Location = New System.Drawing.Point(729, 28)
+        Me.songBtn.Name = "songBtn"
+        Me.songBtn.Size = New System.Drawing.Size(50, 50)
+        Me.songBtn.TabIndex = 8
+        Me.songBtn.TabStop = False
+        Me.songBtn.UseVisualStyleBackColor = False
         '
         'MainMenu
         '
@@ -240,12 +240,12 @@ Partial Class MainMenu
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.songButton)
+        Me.Controls.Add(Me.songBtn)
         Me.Controls.Add(Me.creditsBtn)
         Me.Controls.Add(Me.playBtn)
         Me.Controls.Add(Me.instructionsBtn)
         Me.Controls.Add(Me.exitBtn)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.titleLabel)
         Me.Controls.Add(Me.bgPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
@@ -257,7 +257,7 @@ Partial Class MainMenu
 
     End Sub
 
-    Friend WithEvents Label1 As Label
+    Friend WithEvents titleLabel As Label
     Friend WithEvents Devansh As Button
     Friend WithEvents Pranav As Button
     Friend WithEvents exitBtn As Button
@@ -265,8 +265,8 @@ Partial Class MainMenu
     Friend WithEvents playBtn As Button
     Private WithEvents creditsBtn As Button
     Friend WithEvents bgPanel As Panel
-    Friend WithEvents TopicLbl As Label
+    Friend WithEvents topicLbl As Label
     Friend WithEvents infoLbl As Label
     Private WithEvents Aiden As Button
-    Friend WithEvents songButton As Button
+    Friend WithEvents songBtn As Button
 End Class

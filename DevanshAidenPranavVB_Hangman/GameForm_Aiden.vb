@@ -13,7 +13,7 @@ Public Class GameForm_Aiden
     Dim TimeLimit = TimeSpan.FromMinutes(24)
     Dim Timer As Timer
     Dim Start As DateTime
-    Dim whenPaused As TimeSpan
+    Dim timePassed As TimeSpan
 
     Private Async Sub GameForm_Aiden_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         buttonList = New List(Of Button) From
@@ -30,10 +30,10 @@ Public Class GameForm_Aiden
     Private Sub onpause() Handles MyBase.VisibleChanged
         If Me.Visible = True Then
             Timer.Enabled = True
-            Start = Date.Now.Subtract(whenPaused)
+            Start = Date.Now.Subtract(timePassed)
         Else
             Timer.Enabled = False
-            whenPaused = DateTime.Now - Start
+            timePassed = DateTime.Now - Start
         End If
     End Sub
 
@@ -42,7 +42,6 @@ Public Class GameForm_Aiden
     End Sub
 
     Private Sub TimerEvent(ByVal source As Object, ByVal e As ElapsedEventArgs)
-        Debug.Print("Event Raised at {0:HH:mm:ss.fff}", e.SignalTime)
         Dim timeLeft = (TimeLimit - (DateTime.Now - Start))
         If timeLeft <= TimeSpan.Zero Then
             Me.Invoke(Sub()
@@ -176,9 +175,7 @@ Public Class GameForm_Aiden
         If livesLost = 10 Then
             GameOver()
             Exit Sub
-        End If
-
-        If wordFound Then
+        ElseIf wordFound Then
             GameWon()
             Exit Sub
         End If
@@ -187,13 +184,13 @@ Public Class GameForm_Aiden
 
     End Sub
 
-    Private Sub ResetClick(sender As Object, e As EventArgs) Handles resetBtn.Click
+    Private Sub resetBtn_Click(sender As Object, e As EventArgs) Handles resetBtn.Click
         If MsgBox("Are you sure you want to give up? This will count as a failed word!", 4, "Give up?") = 6 Then
             GameOver()
         End If
     End Sub
 
-    Private Sub MenuBtn_Click(sender As Object, e As EventArgs) Handles menuBtn.Click
+    Private Sub menuBtn_Click(sender As Object, e As EventArgs) Handles menuBtn.Click
         If MsgBox("Do you want to reset all your progress as well?", 4, "Reset progress too?") = 6 Then
             MainMenu.Show()
             Me.Close()

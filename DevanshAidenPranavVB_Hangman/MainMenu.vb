@@ -1,10 +1,6 @@
 ﻿Public Class MainMenu
     Public musicPlaying As Boolean = True
     Private Sub onshow(sender As Object, e As EventArgs) Handles Me.VisibleChanged
-        playBtn.Visible = True
-        exitBtn.Visible = True
-        instructionsBtn.Visible = True
-        creditsBtn.Visible = True
         Devansh.Visible = False
         Aiden.Visible = False
         Pranav.Visible = False
@@ -26,8 +22,8 @@
 
     Private Sub playBtn_Click(sender As Object, e As EventArgs) Handles playBtn.Click
         bgPanel.Visible = True
-        TopicLbl.Visible = True
-        TopicLbl.Text = "Select Topic"
+        topicLbl.Visible = True
+        topicLbl.Text = "Select Topic"
         infoLbl.Visible = False
 
         Devansh.Visible = True
@@ -43,8 +39,8 @@
 
     Private Sub creditsBtn_Click(sender As Object, e As EventArgs) Handles creditsBtn.Click
         bgPanel.Visible = True
-        TopicLbl.Visible = True
-        TopicLbl.Text = "Credits"
+        topicLbl.Visible = True
+        topicLbl.Text = "Credits"
         infoLbl.Visible = True
         infoLbl.Text = "This Hangman game is brought to you by Beribus Games, consisting of Aiden Naji, Devansh Sayal and Pranav Gupta.
 Lead Programmer: Aiden Naji
@@ -60,13 +56,14 @@ Icons: icons8.com"
 
     Private Sub instructionsBtn_Click(sender As Object, e As EventArgs) Handles instructionsBtn.Click
         bgPanel.Visible = True
-        TopicLbl.Visible = True
-        TopicLbl.Text = "How to Play"
+        topicLbl.Visible = True
+        topicLbl.Text = "How to Play"
         infoLbl.Visible = True
         infoLbl.Text = "A hidden word chosen based on the topic you've selected. You have to find this word to save the man being hung! 
 To find the word you select a letter from the on-screen keyboard, if the letter is part of the word it will get revealed at the top. 
 If it isn't another part of the man is drawn, you can only make 10 mistakes before his fate is sealed. 
-There are 24 total words of different length in each topic, can you solve them all and save everyone?"
+There are 24 total words of different length in each topic and there is 24 minutes to solve them all,
+can you solve them all and save everyone in time?"
 
         Devansh.Visible = False
         Aiden.Visible = False
@@ -78,15 +75,15 @@ There are 24 total words of different length in each topic, can you solve them a
           AudioPlayMode.BackgroundLoop)
     End Sub
 
-    Private Sub songButton_Click(sender As Object, e As EventArgs) Handles songButton.Click
+    Private Sub songBtn_Click(sender As Object, e As EventArgs) Handles songBtn.Click
         If musicPlaying Then
             My.Computer.Audio.Stop()
-            songButton.BackgroundImage = My.Resources.icons8_mute_100
+            songBtn.BackgroundImage = My.Resources.icons8_mute_100
             musicPlaying = False
         Else
             My.Computer.Audio.Play(My.Resources.synth1,
           AudioPlayMode.BackgroundLoop)
-            songButton.BackgroundImage = My.Resources.icons8_audio_100
+            songBtn.BackgroundImage = My.Resources.icons8_audio_100
             musicPlaying = True
         End If
     End Sub
