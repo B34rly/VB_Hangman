@@ -56,6 +56,8 @@ Partial Class GameForm_Devansh
         Me.failedWordsLabel = New System.Windows.Forms.Label()
         Me.resetBtn = New System.Windows.Forms.Button()
         Me.menuBtn = New System.Windows.Forms.Button()
+        Me.timerLabel = New System.Windows.Forms.Label()
+        Me.songButton = New System.Windows.Forms.Button()
         CType(Me.hangmanPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -596,6 +598,36 @@ Partial Class GameForm_Devansh
         Me.menuBtn.Text = "Return To Menu"
         Me.menuBtn.UseVisualStyleBackColor = False
         '
+        'timerLabel
+        '
+        Me.timerLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.timerLabel.Font = New System.Drawing.Font("Source Code Pro Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.timerLabel.Location = New System.Drawing.Point(558, 148)
+        Me.timerLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.timerLabel.Name = "timerLabel"
+        Me.timerLabel.Size = New System.Drawing.Size(190, 77)
+        Me.timerLabel.TabIndex = 11
+        Me.timerLabel.Text = "24:00"
+        Me.timerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'songButton
+        '
+        Me.songButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.songButton.BackgroundImage = Global.DevanshAidenPranavVB_Hangman.My.Resources.Resources.icons8_audio_100
+        Me.songButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.songButton.FlatAppearance.BorderSize = 0
+        Me.songButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.songButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
+        Me.songButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.songButton.Font = New System.Drawing.Font("Source Code Pro", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
+        Me.songButton.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.songButton.Location = New System.Drawing.Point(742, 388)
+        Me.songButton.Name = "songButton"
+        Me.songButton.Size = New System.Drawing.Size(50, 50)
+        Me.songButton.TabIndex = 12
+        Me.songButton.TabStop = False
+        Me.songButton.UseVisualStyleBackColor = False
+        '
         'GameForm_Devansh
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(144.0!, 144.0!)
@@ -678,6 +710,7 @@ Partial Class GameForm_Devansh
     Friend WithEvents completedAmountLabel As Label
     Friend WithEvents failedWordsLabel As Label
     Friend WithEvents resetBtn As Button
-    Friend WithEvents Button1 As Button
     Friend WithEvents menuBtn As Button
+    Friend WithEvents timerLabel As Label
+    Friend WithEvents songButton As Button
 End Class

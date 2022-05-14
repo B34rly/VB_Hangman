@@ -46,19 +46,19 @@ Public Class GameForm_Aiden
         Dim timeLeft = (TimeLimit - (DateTime.Now - Start))
         If timeLeft <= TimeSpan.Zero Then
             Me.Invoke(Sub()
-                          Label1.Text = timeLeft.ToString("00:00")
+                          timerLabel.Text = timeLeft.ToString("00:00")
                       End Sub)
             Timer.Enabled = False
             GameFinish("time")
         Else
             Me.Invoke(Sub()
-                          Label1.Text = timeLeft.ToString("mm\:ss")
+                          timerLabel.Text = timeLeft.ToString("mm\:ss")
                       End Sub)
         End If
     End Sub
 
     Private Sub SetTimer()
-        Label1.Text = (TimeLimit - (DateTime.Now - Start)).ToString("mm\:ss")
+        timerLabel.Text = (TimeLimit - (DateTime.Now - Start)).ToString("mm\:ss")
     End Sub
 
     Private Sub songButton_Click(sender As Object, e As EventArgs) Handles songButton.Click

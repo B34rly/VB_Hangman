@@ -56,7 +56,7 @@ Partial Class GameForm_Aiden
         Me.failedWordsLabel = New System.Windows.Forms.Label()
         Me.resetBtn = New System.Windows.Forms.Button()
         Me.menuBtn = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.timerLabel = New System.Windows.Forms.Label()
         Me.songButton = New System.Windows.Forms.Button()
         CType(Me.hangmanPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -564,17 +564,17 @@ Partial Class GameForm_Aiden
         Me.menuBtn.Text = "Return To Menu"
         Me.menuBtn.UseVisualStyleBackColor = False
         '
-        'Label1
+        'timerLabel
         '
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Source Code Pro Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(558, 148)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(190, 77)
-        Me.Label1.TabIndex = 11
-        Me.Label1.Text = "24:00"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.timerLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.timerLabel.Font = New System.Drawing.Font("Source Code Pro Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.timerLabel.Location = New System.Drawing.Point(558, 148)
+        Me.timerLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.timerLabel.Name = "timerLabel"
+        Me.timerLabel.Size = New System.Drawing.Size(190, 77)
+        Me.timerLabel.TabIndex = 11
+        Me.timerLabel.Text = "24:00"
+        Me.timerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'songButton
         '
@@ -602,7 +602,7 @@ Partial Class GameForm_Aiden
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.songButton)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.timerLabel)
         Me.Controls.Add(Me.menuBtn)
         Me.Controls.Add(Me.resetBtn)
         Me.Controls.Add(Me.failedWordsLabel)
@@ -678,6 +678,6 @@ Partial Class GameForm_Aiden
     Friend WithEvents failedWordsLabel As Label
     Friend WithEvents resetBtn As Button
     Friend WithEvents menuBtn As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents timerLabel As Label
     Friend WithEvents songButton As Button
 End Class
