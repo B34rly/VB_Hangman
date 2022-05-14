@@ -46,7 +46,12 @@
         TopicLbl.Visible = True
         TopicLbl.Text = "Credits"
         infoLbl.Visible = True
-        infoLbl.Text = "Music: Evan King - Vapor"
+        infoLbl.Text = "This Hangman game is brought to you by Beribus Games, consisting of Aiden Naji, Devansh Sayal and Pranav Gupta.
+Lead Programmer: Aiden Naji
+Resource Manager: Devansh Sayal
+Graphic Designer: Pranav Gupta
+Music: Evan King - Vapor (context-sensitive.com)
+Icons: icons8.com"
 
         Devansh.Visible = False
         Aiden.Visible = False
