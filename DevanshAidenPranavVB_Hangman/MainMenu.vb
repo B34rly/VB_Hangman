@@ -36,7 +36,9 @@
     End Sub
 
     Private Sub exitBtn_Click(sender As Object, e As EventArgs) Handles exitBtn.Click
-        Application.Exit()
+        If MsgBox("Are you sure you want to exit?", 4, "Exit?") = 6 Then
+            Application.Exit()
+        End If
     End Sub
 
     Private Sub creditsBtn_Click(sender As Object, e As EventArgs) Handles creditsBtn.Click

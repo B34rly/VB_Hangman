@@ -1,5 +1,4 @@
-﻿Imports System.Text.RegularExpressions
-Imports System.Timers
+﻿Imports System.Timers
 Public Class GameForm_Aiden
     Dim buttonList
     Dim wordList As New List(Of String) From
@@ -83,14 +82,19 @@ Public Class GameForm_Aiden
             Debug.Print(hiddenWord)
             Debug.Print(index)
         Else
+            completedAmountLabel.Text() = "Completed: " + completed.ToString()
+            failedWordsLabel.Text() = "Failed: " + failed.ToString()
+            wordsLeftLabel.Text() = "Words Left: 0"
+
             GameFinish("emptyList")
             Exit Sub
+
         End If
 
 
-        completedAmountLabel.Text() = "Completed " + completed.ToString()
-        failedWordsLabel.Text() = "Failed " + failed.ToString()
-        wordsLeftLabel.Text() = "Words Left " + wordList.Count.ToString()
+        completedAmountLabel.Text() = "Completed: " + completed.ToString()
+        failedWordsLabel.Text() = "Failed: " + failed.ToString()
+        wordsLeftLabel.Text() = "Words Left: " + wordList.Count.ToString()
 
         livesLost = 0
         hiddenWordLabel.Text() = ""
@@ -110,10 +114,15 @@ Public Class GameForm_Aiden
     End Sub
     Private Sub GameFinish(reason)
         If reason = "time" Then
-            MsgBox("You ran out of time to save everyone! There were still " + wordList.Count - 1 + " men left! Try again later idek", 1, "Game Over!")
+            MsgBox("You ran out of time to save everyone! There were still " + wordList.Count.ToString + " men left! Try to save more next time!", 1, "Game Over!")
+            MainMenu.Show()
+            Me.Close()
         ElseIf reason = "emptyList" Then
-            MsgBox("You've gone through all the words and saved everyone you could! " + hiddenWord, 1, "Game Over!")
+            MsgBox("You've gone through all the words and saved " + completed.ToString + " of them! Good job!", 1, "Game Over!")
+            MainMenu.Show()
+            Me.Close()
         End If
+
     End Sub
     Private Sub GameOver()
         wordList.Remove(hiddenWord)
@@ -135,7 +144,7 @@ Public Class GameForm_Aiden
         selectedLetters += clicked.Text
 
         hiddenWordLabel.Text() = ""
-        Dim foundLetter = False
+        Dim foundLetter
         Dim wordFound = True
         Dim wrongLetter = True
         For Each c As Char In hiddenWord.ToUpper()
@@ -162,7 +171,6 @@ Public Class GameForm_Aiden
                 hiddenWordLabel.Text() += "_ "
                 wordFound = False
             End If
-            foundLetter = False
         Next
 
         If livesLost = 10 Then
