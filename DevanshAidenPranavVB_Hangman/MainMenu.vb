@@ -1,5 +1,4 @@
 ﻿Public Class MainMenu
-    Public musicPlaying As Boolean = True
     Private Sub onshow(sender As Object, e As EventArgs) Handles Me.VisibleChanged
         Devansh.Visible = False
         Aiden.Visible = False
@@ -68,23 +67,5 @@ can you solve them all and save everyone in time?"
         Devansh.Visible = False
         Aiden.Visible = False
         Pranav.Visible = False
-    End Sub
-
-    Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        My.Computer.Audio.Play(My.Resources.synth1,
-          AudioPlayMode.BackgroundLoop)
-    End Sub
-
-    Private Sub songBtn_Click(sender As Object, e As EventArgs) Handles songBtn.Click
-        If musicPlaying Then
-            My.Computer.Audio.Stop()
-            songBtn.BackgroundImage = My.Resources.icons8_mute_100
-            musicPlaying = False
-        Else
-            My.Computer.Audio.Play(My.Resources.synth1,
-          AudioPlayMode.BackgroundLoop)
-            songBtn.BackgroundImage = My.Resources.icons8_audio_100
-            musicPlaying = True
-        End If
     End Sub
 End Class

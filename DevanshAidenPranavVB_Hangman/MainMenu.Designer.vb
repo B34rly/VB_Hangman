@@ -218,7 +218,7 @@ Partial Class MainMenu
         'songBtn
         '
         Me.songBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.songBtn.BackgroundImage = Global.DevanshAidenPranavVB_Hangman.My.Resources.Resources.icons8_audio_100
+
         Me.songBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.songBtn.FlatAppearance.BorderSize = 0
         Me.songBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
