@@ -65,7 +65,7 @@ Partial Class GameForm_Devansh
         Me.hiddenWordLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.hiddenWordLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.hiddenWordLabel.Font = New System.Drawing.Font("Source Code Pro", 21.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
-        Me.hiddenWordLabel.Location = New System.Drawing.Point(221, 40)
+        Me.hiddenWordLabel.Location = New System.Drawing.Point(225, 40)
         Me.hiddenWordLabel.Name = "hiddenWordLabel"
         Me.hiddenWordLabel.Size = New System.Drawing.Size(439, 70)
         Me.hiddenWordLabel.TabIndex = 0
@@ -492,7 +492,6 @@ Partial Class GameForm_Devansh
         'hangmanPicture
         '
         Me.hangmanPicture.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.hangmanPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.hangmanPicture.Location = New System.Drawing.Point(28, 148)
         Me.hangmanPicture.Name = "hangmanPicture"
         Me.hangmanPicture.Size = New System.Drawing.Size(192, 256)
@@ -541,7 +540,7 @@ Partial Class GameForm_Devansh
         Me.resetBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.resetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.resetBtn.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.resetBtn.Location = New System.Drawing.Point(683, 40)
+        Me.resetBtn.Location = New System.Drawing.Point(687, 40)
         Me.resetBtn.Name = "resetBtn"
         Me.resetBtn.Size = New System.Drawing.Size(105, 70)
         Me.resetBtn.TabIndex = 8
@@ -556,7 +555,7 @@ Partial Class GameForm_Devansh
         Me.menuBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.menuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.menuBtn.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.menuBtn.Location = New System.Drawing.Point(28, 40)
+        Me.menuBtn.Location = New System.Drawing.Point(32, 40)
         Me.menuBtn.Name = "menuBtn"
         Me.menuBtn.Size = New System.Drawing.Size(165, 70)
         Me.menuBtn.TabIndex = 10
@@ -601,6 +600,8 @@ Partial Class GameForm_Devansh
         Me.BackgroundImage = Global.DevanshAidenPranavVB_Hangman.My.Resources.Resources.globeblurred
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.songButton)
+        Me.Controls.Add(Me.timerLabel)
         Me.Controls.Add(Me.menuBtn)
         Me.Controls.Add(Me.resetBtn)
         Me.Controls.Add(Me.failedWordsLabel)

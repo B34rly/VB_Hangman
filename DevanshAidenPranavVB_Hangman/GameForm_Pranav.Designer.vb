@@ -64,7 +64,7 @@ Partial Class GameForm_Pranav
         '
         Me.hiddenWordLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.hiddenWordLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.hiddenWordLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
+        Me.hiddenWordLabel.Font = New System.Drawing.Font("Source Code Pro", 21.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point)
         Me.hiddenWordLabel.Location = New System.Drawing.Point(225, 40)
         Me.hiddenWordLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.hiddenWordLabel.Name = "hiddenWordLabel"
@@ -80,7 +80,7 @@ Partial Class GameForm_Pranav
         Me.buttonA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonA.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonA.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonA.Location = New System.Drawing.Point(249, 240)
         Me.buttonA.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonA.Name = "buttonA"
@@ -97,7 +97,7 @@ Partial Class GameForm_Pranav
         Me.buttonB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonB.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonB.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonB.Location = New System.Drawing.Point(305, 240)
         Me.buttonB.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonB.Name = "buttonB"
@@ -114,7 +114,7 @@ Partial Class GameForm_Pranav
         Me.buttonC.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonC.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonC.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonC.Location = New System.Drawing.Point(361, 240)
         Me.buttonC.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonC.Name = "buttonC"
@@ -131,7 +131,7 @@ Partial Class GameForm_Pranav
         Me.buttonD.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonD.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonD.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonD.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonD.Location = New System.Drawing.Point(418, 240)
         Me.buttonD.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonD.Name = "buttonD"
@@ -149,7 +149,7 @@ Partial Class GameForm_Pranav
         Me.buttonE.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonE.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonE.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonE.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonE.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonE.Location = New System.Drawing.Point(472, 240)
         Me.buttonE.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonE.Name = "buttonE"
@@ -166,7 +166,7 @@ Partial Class GameForm_Pranav
         Me.buttonF.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonF.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonF.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonF.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonF.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonF.Location = New System.Drawing.Point(529, 240)
         Me.buttonF.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonF.Name = "buttonF"
@@ -183,7 +183,7 @@ Partial Class GameForm_Pranav
         Me.buttonG.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonG.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonG.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonG.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonG.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonG.Location = New System.Drawing.Point(586, 240)
         Me.buttonG.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonG.Name = "buttonG"
@@ -200,7 +200,7 @@ Partial Class GameForm_Pranav
         Me.buttonH.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonH.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonH.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonH.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonH.Location = New System.Drawing.Point(642, 240)
         Me.buttonH.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonH.Name = "buttonH"
@@ -217,7 +217,7 @@ Partial Class GameForm_Pranav
         Me.buttonI.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonI.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonI.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonI.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonI.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonI.Location = New System.Drawing.Point(698, 240)
         Me.buttonI.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonI.Name = "buttonI"
@@ -234,7 +234,7 @@ Partial Class GameForm_Pranav
         Me.buttonJ.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonJ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonJ.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonJ.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonJ.Location = New System.Drawing.Point(250, 296)
         Me.buttonJ.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonJ.Name = "buttonJ"
@@ -251,7 +251,7 @@ Partial Class GameForm_Pranav
         Me.buttonK.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonK.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonK.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonK.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonK.Location = New System.Drawing.Point(306, 296)
         Me.buttonK.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonK.Name = "buttonK"
@@ -268,7 +268,7 @@ Partial Class GameForm_Pranav
         Me.buttonL.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonL.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonL.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonL.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonL.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonL.Location = New System.Drawing.Point(362, 296)
         Me.buttonL.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonL.Name = "buttonL"
@@ -285,7 +285,7 @@ Partial Class GameForm_Pranav
         Me.buttonM.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonM.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonM.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonM.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonM.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonM.Location = New System.Drawing.Point(418, 296)
         Me.buttonM.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonM.Name = "buttonM"
@@ -302,7 +302,7 @@ Partial Class GameForm_Pranav
         Me.buttonN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonN.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonN.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonN.Location = New System.Drawing.Point(474, 296)
         Me.buttonN.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonN.Name = "buttonN"
@@ -319,7 +319,7 @@ Partial Class GameForm_Pranav
         Me.buttonO.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonO.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonO.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonO.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonO.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonO.Location = New System.Drawing.Point(531, 296)
         Me.buttonO.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonO.Name = "buttonO"
@@ -336,7 +336,7 @@ Partial Class GameForm_Pranav
         Me.buttonP.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonP.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonP.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonP.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonP.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonP.Location = New System.Drawing.Point(588, 296)
         Me.buttonP.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonP.Name = "buttonP"
@@ -353,7 +353,7 @@ Partial Class GameForm_Pranav
         Me.buttonQ.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonQ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonQ.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonQ.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonQ.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonQ.Location = New System.Drawing.Point(642, 296)
         Me.buttonQ.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonQ.Name = "buttonQ"
@@ -370,7 +370,7 @@ Partial Class GameForm_Pranav
         Me.buttonR.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonR.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonR.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonR.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonR.Location = New System.Drawing.Point(698, 296)
         Me.buttonR.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonR.Name = "buttonR"
@@ -387,7 +387,7 @@ Partial Class GameForm_Pranav
         Me.buttonS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonS.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonS.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonS.Location = New System.Drawing.Point(278, 352)
         Me.buttonS.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonS.Name = "buttonS"
@@ -404,7 +404,7 @@ Partial Class GameForm_Pranav
         Me.buttonT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonT.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonT.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonT.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonT.Location = New System.Drawing.Point(332, 352)
         Me.buttonT.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonT.Name = "buttonT"
@@ -421,7 +421,7 @@ Partial Class GameForm_Pranav
         Me.buttonU.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonU.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonU.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonU.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonU.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonU.Location = New System.Drawing.Point(389, 352)
         Me.buttonU.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonU.Name = "buttonU"
@@ -438,7 +438,7 @@ Partial Class GameForm_Pranav
         Me.buttonV.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonV.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonV.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonV.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonV.Location = New System.Drawing.Point(445, 352)
         Me.buttonV.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonV.Name = "buttonV"
@@ -455,7 +455,7 @@ Partial Class GameForm_Pranav
         Me.buttonW.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonW.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonW.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonW.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonW.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonW.Location = New System.Drawing.Point(500, 352)
         Me.buttonW.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonW.Name = "buttonW"
@@ -472,7 +472,7 @@ Partial Class GameForm_Pranav
         Me.buttonX.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonX.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonX.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonX.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonX.Location = New System.Drawing.Point(558, 352)
         Me.buttonX.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonX.Name = "buttonX"
@@ -489,7 +489,7 @@ Partial Class GameForm_Pranav
         Me.buttonY.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonY.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonY.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonY.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonY.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonY.Location = New System.Drawing.Point(614, 352)
         Me.buttonY.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonY.Name = "buttonY"
@@ -506,7 +506,7 @@ Partial Class GameForm_Pranav
         Me.buttonZ.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.buttonZ.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.buttonZ.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonZ.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.buttonZ.Font = New System.Drawing.Font("Source Code Pro", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.buttonZ.Location = New System.Drawing.Point(669, 352)
         Me.buttonZ.Margin = New System.Windows.Forms.Padding(2)
         Me.buttonZ.Name = "buttonZ"
@@ -531,11 +531,11 @@ Partial Class GameForm_Pranav
         '
         Me.wordsLeftLabel.AutoSize = True
         Me.wordsLeftLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.wordsLeftLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.wordsLeftLabel.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.wordsLeftLabel.Location = New System.Drawing.Point(245, 150)
         Me.wordsLeftLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.wordsLeftLabel.Name = "wordsLeftLabel"
-        Me.wordsLeftLabel.Size = New System.Drawing.Size(141, 25)
+        Me.wordsLeftLabel.Size = New System.Drawing.Size(168, 25)
         Me.wordsLeftLabel.TabIndex = 5
         Me.wordsLeftLabel.Text = "Words Left: x"
         '
@@ -543,11 +543,11 @@ Partial Class GameForm_Pranav
         '
         Me.completedAmountLabel.AutoSize = True
         Me.completedAmountLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.completedAmountLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.completedAmountLabel.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.completedAmountLabel.Location = New System.Drawing.Point(245, 175)
         Me.completedAmountLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.completedAmountLabel.Name = "completedAmountLabel"
-        Me.completedAmountLabel.Size = New System.Drawing.Size(140, 25)
+        Me.completedAmountLabel.Size = New System.Drawing.Size(156, 25)
         Me.completedAmountLabel.TabIndex = 6
         Me.completedAmountLabel.Text = "Completed: x"
         '
@@ -555,11 +555,11 @@ Partial Class GameForm_Pranav
         '
         Me.failedWordsLabel.AutoSize = True
         Me.failedWordsLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.failedWordsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.failedWordsLabel.Font = New System.Drawing.Font("Source Code Pro Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.failedWordsLabel.Location = New System.Drawing.Point(245, 200)
         Me.failedWordsLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.failedWordsLabel.Name = "failedWordsLabel"
-        Me.failedWordsLabel.Size = New System.Drawing.Size(95, 25)
+        Me.failedWordsLabel.Size = New System.Drawing.Size(120, 25)
         Me.failedWordsLabel.TabIndex = 7
         Me.failedWordsLabel.Text = "Failed: x"
         '
@@ -570,7 +570,7 @@ Partial Class GameForm_Pranav
         Me.resetBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.resetBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.resetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.resetBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.resetBtn.Font = New System.Drawing.Font("Source Code Pro", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.resetBtn.Location = New System.Drawing.Point(688, 40)
         Me.resetBtn.Margin = New System.Windows.Forms.Padding(2)
         Me.resetBtn.Name = "resetBtn"
@@ -586,7 +586,7 @@ Partial Class GameForm_Pranav
         Me.menuBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.menuBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer), CType(CType(150, Byte), Integer))
         Me.menuBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.menuBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.menuBtn.Font = New System.Drawing.Font("Source Code Pro", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.menuBtn.Location = New System.Drawing.Point(32, 40)
         Me.menuBtn.Margin = New System.Windows.Forms.Padding(2)
         Me.menuBtn.Name = "menuBtn"
@@ -599,7 +599,7 @@ Partial Class GameForm_Pranav
         'timerLabel
         '
         Me.timerLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.timerLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.timerLabel.Font = New System.Drawing.Font("Source Code Pro Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.timerLabel.Location = New System.Drawing.Point(558, 148)
         Me.timerLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.timerLabel.Name = "timerLabel"
