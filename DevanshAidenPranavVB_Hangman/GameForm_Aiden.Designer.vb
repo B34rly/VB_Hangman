@@ -579,6 +579,7 @@ Partial Class GameForm_Aiden
         'songButton
         '
         Me.songButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.songButton.BackgroundImage = Global.DevanshAidenPranavVB_Hangman.My.Resources.Resources.icons8_audio_100
         Me.songButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.songButton.FlatAppearance.BorderSize = 0
         Me.songButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
