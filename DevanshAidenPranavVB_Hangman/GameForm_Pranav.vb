@@ -47,6 +47,7 @@ Public Class GameForm_Pranav
             Me.Invoke(Sub()
                           timerLabel.Text = timeLeft.ToString("00: 00")
                       End Sub)
+            TimerP.Enabled = False
             GameFinish1("time")
         Else
             Me.Invoke(Sub()
@@ -112,7 +113,7 @@ Public Class GameForm_Pranav
         wordListP.Remove(hiddenWordP)
         failedP += 1
         MsgBox("The man has been hanged, you couldn't save him! The correct word was: " + hiddenWordP, 1, "Game Lost!")
-        Reset()
+        Reset1()
     End Sub
 
     Private Sub GameWon1()

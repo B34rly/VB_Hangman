@@ -37,7 +37,7 @@ Public Class GameForm_Devansh
         End If
     End Sub
 
-    Private Sub onclose2() Handles MyBase.FormClosed
+    Private Sub onclose1() Handles MyBase.FormClosed
         TimerD.Enabled = False
     End Sub
 
@@ -47,6 +47,7 @@ Public Class GameForm_Devansh
             Me.Invoke(Sub()
                           timerLabel.Text = timeLeft.ToString("00: 00")
                       End Sub)
+            TimerD.Enabled = False
             GameFinish1("time")
         Else
             Me.Invoke(Sub()
@@ -112,7 +113,7 @@ Public Class GameForm_Devansh
         wordListD.Remove(hiddenWordD)
         failedD += 1
         MsgBox("The man has been hanged, you couldn't save him! The correct word was: " + hiddenWordD, 1, "Game Lost!")
-        Reset()
+        Reset1()
     End Sub
 
     Private Sub GameWon1()
