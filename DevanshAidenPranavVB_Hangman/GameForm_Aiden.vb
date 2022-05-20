@@ -35,6 +35,11 @@ Public Class GameForm_Aiden
             Timer.Enabled = False
             timePassed = DateTime.Now - Start
         End If
+        If Not MainMenu.musicPlaying Then
+            songButton.BackgroundImage = My.Resources.icons8_mute_100
+        Else
+            songButton.BackgroundImage = My.Resources.icons8_audio_100
+        End If
     End Sub
 
     Private Sub onclose() Handles MyBase.FormClosed
@@ -54,10 +59,6 @@ Public Class GameForm_Aiden
                           timerLabel.Text = timeLeft.ToString("mm\:ss")
                       End Sub)
         End If
-    End Sub
-
-    Private Sub SetTimer()
-        timerLabel.Text = (TimeLimit - (DateTime.Now - Start)).ToString("mm\:ss")
     End Sub
 
     Private Sub songButton_Click(sender As Object, e As EventArgs) Handles songButton.Click

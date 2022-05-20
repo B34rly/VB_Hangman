@@ -4,6 +4,12 @@
         Devansh.Visible = False
         Aiden.Visible = False
         Pranav.Visible = False
+
+        If Not musicPlaying Then
+            songBtn.BackgroundImage = My.Resources.icons8_mute_100
+        Else
+            songBtn.BackgroundImage = My.Resources.icons8_audio_100
+        End If
     End Sub
     Private Sub Devansh_Click(sender As Object, e As EventArgs) Handles Devansh.Click
         GameForm_Devansh.Show()

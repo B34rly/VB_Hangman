@@ -35,6 +35,11 @@ Public Class GameForm_Devansh
             TimerD.Enabled = False
             timePassedD = DateTime.Now - StartD
         End If
+        If Not MainMenu.musicPlaying Then
+            songButton.BackgroundImage = My.Resources.icons8_mute_100
+        Else
+            songButton.BackgroundImage = My.Resources.icons8_audio_100
+        End If
     End Sub
 
     Private Sub onclose1() Handles MyBase.FormClosed
@@ -183,6 +188,19 @@ Public Class GameForm_Devansh
         Else
             MainMenu.Show()
             Me.Hide()
+        End If
+    End Sub
+
+    Private Sub songButton_Click(sender As Object, e As EventArgs) Handles songButton.Click
+        If MainMenu.musicPlaying Then
+            My.Computer.Audio.Stop()
+            songButton.BackgroundImage = My.Resources.icons8_mute_100
+            MainMenu.musicPlaying = False
+        Else
+            My.Computer.Audio.Play(My.Resources.synth1,
+          AudioPlayMode.BackgroundLoop)
+            songButton.BackgroundImage = My.Resources.icons8_audio_100
+            MainMenu.musicPlaying = True
         End If
     End Sub
 End Class
