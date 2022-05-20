@@ -22,7 +22,6 @@ Partial Class GameForm_Aiden
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GameForm_Aiden))
         Me.hiddenWordLabel = New System.Windows.Forms.Label()
         Me.buttonA = New System.Windows.Forms.Button()
         Me.buttonB = New System.Windows.Forms.Button()
@@ -598,7 +597,7 @@ Partial Class GameForm_Aiden
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImage = Global.DevanshAidenPranavVB_Hangman.My.Resources.Resources.carsblurred
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.songButton)

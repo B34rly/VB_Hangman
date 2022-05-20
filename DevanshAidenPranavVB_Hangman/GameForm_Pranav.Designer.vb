@@ -631,6 +631,7 @@ Partial Class GameForm_Pranav
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
+        Me.BackgroundImage = Global.DevanshAidenPranavVB_Hangman.My.Resources.Resources.gamesblurred
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.songButton)
