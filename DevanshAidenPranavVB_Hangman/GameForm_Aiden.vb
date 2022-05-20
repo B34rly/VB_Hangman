@@ -59,20 +59,6 @@ Public Class GameForm_Aiden
     Private Sub SetTimer()
         timerLabel.Text = (TimeLimit - (DateTime.Now - Start)).ToString("mm\:ss")
     End Sub
-
-    Private Sub songButton_Click(sender As Object, e As EventArgs) Handles songButton.Click
-        If MainMenu.musicPlaying Then
-            My.Computer.Audio.Stop()
-            songButton.BackgroundImage = My.Resources.icons8_mute_100
-            MainMenu.musicPlaying = False
-        Else
-            My.Computer.Audio.Play(My.Resources.synth1,
-          AudioPlayMode.BackgroundLoop)
-            songButton.BackgroundImage = My.Resources.icons8_audio_100
-            MainMenu.musicPlaying = True
-        End If
-    End Sub
-
     Private Sub Reset()
         Static Generator As New Random()
         If wordList.Count <> 0 Then
